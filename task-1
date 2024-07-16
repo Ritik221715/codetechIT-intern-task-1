@@ -1,0 +1,42 @@
+import java.util.*;
+class basiccalculator
+{
+    public static void main(String args[])
+    {
+        int z;
+        System.out.println("this is a basic calculator");
+        Scanner s=new Scanner(System.in);
+        System.out.println("1-addition \n 2-substraction \n 3-multiplication \n 4-division");
+        System.out.println("enter choice =");
+        int n=s.nextInt();
+        if(n>4)
+        {
+            s.close();
+        }
+        System.out.println("enter any two integer number for calculation =");
+        int a=s.nextInt();
+        int b=s.nextInt();
+        switch(n)
+        {
+            case 1:
+            z=a+b;
+            System.out.println("addition ="+z);
+            break;
+            case 2:
+            z=a-b;
+            System.out.println("substraction ="+z);
+            break;
+            case 3:
+            z=a*b;
+            System.out.println("multiplication ="+z);
+            break;
+            case 4:
+            z=a/b;
+            System.out.println("division ="+z);
+            break;
+            default :
+            System.out.println("invalid choice");
+        }
+        System.out.println("thank you");
+    }
+}
